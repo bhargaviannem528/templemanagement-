@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    /* you can change your color */
+    background-color: rgba(16, 17, 16, 0.825);
+}
+
+.dropdown{
+    position: relative;
+    top: 17PX;
+    left: -10px;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    padding: 17px;
+    text-decoration: none;
+    color: rgb(230, 230, 239);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.drop{
+    position: absolute;
+    display: none;
+    background-color: rgba(239, 240, 245, 0.895);
+    width: 100px;
+    z-index: 100;
+}
+
+.dropdown:hover .drop{
+    display: block;
+}
+
+.drop a{
+    display: block;
+    
+}
+
+.dropdown label{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+   
+    height:500px;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+   
+   
+}
+.main .card{
+    width: 450px;
+    height: 150px;
+    padding: 15px;
+    margin: 15px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.card1{
+    background-color: blue;
+}
+.card2{
+    background-color: red;
+}
+.card3{
+    background-color:palevioletred;
+}
+.card4{
+    background-color: green;
+}
+.card5{
+    background-color:violet;
+}
+.card h1{
+    font-size: 20px;
+    color: white;
+}
+.card p{
+    font-size: 20px;
+    color: white;
+}

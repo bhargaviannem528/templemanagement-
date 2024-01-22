@@ -1,0 +1,70 @@
+
+<div class="navbar">
+
+    <!-- place you logo image  -->
+    <img style="height:50px;;width:50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfJzrn7hRGvoZ6ZNB_p5oy9QwLpgZGl12hQ&usqp=CAU.jpg" alt="logo">
+    <nav>
+
+       <!--<div class="dropdown">
+            <label>dropdown</label>
+            <div class="drop">
+                <a href="templeprofile">TEMPLE PROFILE</a>
+                <a href="worshipgod">WORSHIP GOD</a>
+                <a href="incometype">INCOME TYPE</a>
+                <a href="expensetype">EXPENSE TYPE</a>
+                <a href="employeedetails">EMPLOYEE DETAILS</a>
+                <a href="userdetails">USER DETAILS</a>
+                <a href="festival">FESTIVAL</a>
+                <a href="devotee">DEVOTEE DETAILS</a>
+            </div>
+       </div>-->
+
+
+        <a href="home3">HOME</a>
+    
+       <a href="poojadetails">poojadetais</a>
+        <a href="donationdetails">donationdetails</a>
+        <a href="sevadetails">sevadetails</a>
+        
+        <a href="darshandetails">darshandetails</a>
+        <a href="marriagedetails">marriagedetails</a>
+        
+        
+        
+        <a href="/login">LOGOUT</a>
+    </nav>
+
+</div>
+<div class="pooja">
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>
+                MOBILE
+            </th>
+            <th>
+                SEVATYPE
+            </th>
+            <th>
+                STARTDATE
+            </th>
+            <th>
+                ENDDATE
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bh of details">
+            <td>{{bh.name}}</td>
+            <td>{{bh.mobile}}</td>
+            <td>{{bh.sevatype}}</td>
+            <td>{{bh.start}}</td>
+            <td>{{bh.end}}</td>
+        </tr>
+    </tbody>
+    
+</table>
+</div>
+
+

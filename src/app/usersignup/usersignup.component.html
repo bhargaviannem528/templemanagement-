@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<app-header></app-header>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form [formGroup]="formdata" (ngSubmit)="action(formdata.value)">
+            <div class="user_details">
+                <div class="input_pox">
+                    <span class="datails">Full Name</span>
+                    <input type="text" placeholder="enter your name" name="name" formControlName="name" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Username</span>
+                    <input type="text" placeholder="enter your Username"  name="username" formControlName="username"required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Email</span>
+                    <input type="text" placeholder="enter your Email" name="email" formControlName="email" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Phone Number</span>
+                    <input type="text" placeholder="enter your Phone" name="phonenumber" formControlName="phonenumber"required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Password</span>
+                    <input type="text" placeholder="enter your Password" name="password" formControlName="password" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Confirm Password</span>
+                    <input type="text" placeholder="Confirm your Password"  name="confirmpassword" formControlName="confirmpassword"required>
+                </div>
+            </div>
+            
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            <span>you have already an account <a [routerLink]="['/login']">Login</a></span>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
+  
+       

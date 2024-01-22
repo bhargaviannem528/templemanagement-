@@ -1,0 +1,76 @@
+<div class="navbar">
+
+    <!-- place you logo image  -->
+    <img style="height:50px;;width:50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfJzrn7hRGvoZ6ZNB_p5oy9QwLpgZGl12hQ&usqp=CAU.jpg" alt="logo">
+    <nav>
+
+       <!--<div class="dropdown">
+            <label>dropdown</label>
+            <div class="drop">
+                <a href="templeprofile">TEMPLE PROFILE</a>
+                <a href="worshipgod">WORSHIP GOD</a>
+                <a href="incometype">INCOME TYPE</a>
+                <a href="expensetype">EXPENSE TYPE</a>
+                <a href="employeedetails">EMPLOYEE DETAILS</a>
+                <a href="userdetails">USER DETAILS</a>
+                <a href="festival">FESTIVAL</a>
+                <a href="devotee">DEVOTEE DETAILS</a>
+            </div>
+       </div>-->
+
+
+        <a href="home3">HOME</a>
+    
+       <a href="poojadetails">poojadetais</a>
+        <a href="donationdetails">donationdetails</a>
+       
+        
+        <a href="sevadetails">sevadetails</a>
+        <a href="darshanndetails">darshandetails</a>
+        <a href="marriagedetails">marriagedetails</a>
+        
+    
+        
+        <a href="/login">LOGOUT</a>
+    </nav>
+
+</div>
+<div class="pooja">
+<table>
+    <thead>
+        <tr>
+            <th>BRIDE NAME</th>
+            <th>
+               GROOM  NAME
+            </th>
+            <th>
+                DATE
+            </th>
+            <th>
+                MAIL
+            </th>
+            <th>
+                PHONE
+            </th>
+            <th>
+                INFO
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bh of details">
+            <td>{{bh.bridename}}</td>
+            <td>{{bh.groomname}}</td>
+            <td>{{bh.date}}</td>
+            <td>{{bh.mail}}</td>
+            <td>{{bh.phone}}</td>
+            <td>{{bh.info}}</td>
+        </tr>
+    </tbody>
+    
+</table>
+</div>
+
+
+
